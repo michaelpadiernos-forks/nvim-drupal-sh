@@ -5,6 +5,6 @@ if not status_W then
 end
 
 wk.register({
-  ["<leader>i"] = { name = "+inject" },
-  ["<leader>ii"] = { "<cmd>lua require'nvim-drupal-sh'.showAndPick()<cr>", "Show And Pick Service" },
+    { "<leader>i", group = "inject" },
+    { "<leader>ii", "<cmd>lua require'nvim-drupal-sh'.showAndPick()<cr>", desc = "Show And Pick Service" },
 })
