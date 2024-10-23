@@ -8,5 +8,5 @@ local wk = require("which-key")
 
 wk.register({
     { "<leader>i", group = "inject" },
-    { "<leader>ii", desc = "<cmd>lua require'nvim-drupal-sh'.showAndPick()<cr>" },
+    { "<leader>ii", "<cmd>lua require'nvim-drupal-sh'.showAndPick()<cr>", desc = "Show And Pick Service" },
 })
